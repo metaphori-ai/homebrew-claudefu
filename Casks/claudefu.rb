@@ -12,6 +12,10 @@ cask "claudefu" do
 
   app "ClaudeFu.app"
 
+  # Ensure clean upgrade by explicitly removing old version
+  uninstall quit: "com.wails.claudefu",
+            delete: "/Applications/ClaudeFu.app"
+
   zap trash: [
     "~/.claudefu",
     "~/Library/Application Support/ClaudeFu",
