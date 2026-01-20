@@ -11,6 +11,7 @@ cask "claudefu" do
   depends_on macos: ">= :big_sur"
 
   app "ClaudeFu.app"
+  binary "#{appdir}/ClaudeFu.app/Contents/MacOS/ClaudeFu", target: "claudefu"
 
   # Ensure clean upgrade by explicitly removing old version
   uninstall quit: "com.wails.claudefu",
@@ -26,6 +27,9 @@ cask "claudefu" do
   caveats <<~EOS
     ClaudeFu requires Claude Code CLI to be installed:
       npm install -g @anthropic-ai/claude-code
+
+    Launch from terminal:
+      claudefu
 
     For unsigned builds, you may need to allow the app in:
       System Preferences > Security & Privacy > General
