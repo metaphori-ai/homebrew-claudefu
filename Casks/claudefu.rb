@@ -1,6 +1,6 @@
 cask "claudefu" do
-  version "0.5.19"
-  sha256 "f527901cdee58d7716911472b5444ac65b562571c25911f2483203ebd00f9ea3"
+  version "0.5.20"
+  sha256 "b64f21aff533d251dd46ecfad915b239386de1ee59a2d1a04039064c346ee051"
 
   url "https://github.com/metaphori-ai/claudefu/releases/download/v#{version}/ClaudeFu-v#{version}-darwin-universal.zip"
   name "ClaudeFu"
