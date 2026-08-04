@@ -8,7 +8,7 @@ cask "claudefu" do
   homepage "https://github.com/metaphori-ai/claudefu"
 
   # Requires macOS 11.0 or later (Big Sur+)
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "ClaudeFu.app"
   binary "#{appdir}/ClaudeFu.app/Contents/MacOS/ClaudeFu", target: "claudefu"
