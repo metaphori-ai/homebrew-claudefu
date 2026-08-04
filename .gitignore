@@ -1,0 +1,5 @@
+# Syncthing artifacts.
+# .stignore-settings IS tracked — it is the source of record, regenerated
+# into .stignore per machine by ~/Sync/sync-stignore.sh.
+.stfolder/
+.stignore

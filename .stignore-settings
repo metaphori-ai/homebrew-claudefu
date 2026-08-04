@@ -1,0 +1,100 @@
+// Syncthing master ignore rules
+// Managed via ~/Sync/sync-stignore.sh
+
+// OS generated files
+(?d).DS_Store
+(?d).Thumbs.db
+(?d)desktop.ini
+
+// Node.js
+node_modules
+.npm
+.yarn
+.pnp.*
+.node_repl_history
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+// Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv
+env
+*.egg-info
+*.egg
+.eggs
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.tox
+.nox
+.coverage
+htmlcov
+.ipynb_checkpoints
+
+// Go
+**/vendor
+
+// Rust
+**/target
+
+// Build output / dist
+dist
+build
+out
+.output
+.next
+.nuxt
+.svelte-kit
+.turbo
+.vercel
+.cache
+.parcel-cache
+
+// IDE / Editor
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.project
+.settings
+.classpath
+
+// Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+// Docker
+.docker
+
+// Misc caches and temp
+.eslintcache
+.prettiercache
+.stylelintcache
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+.gradle
+.sass-cache
+tmp
+.tmp
+temp
+
+// Archives (large, reproducible)
+*.tar.gz
+*.zip
+*.tgz
+*.rar
+
+// Syncthing internals
+.stfolder
+.stversions
+
+// Sync conflicts
+*.sync-conflict-*
